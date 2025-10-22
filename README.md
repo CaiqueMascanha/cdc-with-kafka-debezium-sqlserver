@@ -104,11 +104,22 @@ com o seguinte payload JSON:
 
 ---
 
-## 🚀 Dica Final
+## 🚀 Dicas Finais
 
 Após configurar o conector, você pode validar se ele foi criado com sucesso:
 
 ```bash
 curl -X GET http://localhost:8083/connectors/sql-server-cdc-connector/status
+```
 
+Listar todos os conectores:
+
+```bash
+curl -X GET http://localhost:8083/connectors/
+```
+
+Deletar o conector:
+
+```bash
+curl -X DELETE http://localhost:8083/connectors/sql-server-cdc-connector
 ```
